@@ -1,0 +1,1 @@
+edButtons[edButtons.length] = new edButton('gist', 'gist', '[gist src="" height=""]', '', -1);
