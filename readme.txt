@@ -14,13 +14,16 @@ This plugin provides Gist embedding via shortcode as well as adding Gist embed b
 
 A simple plugin that enables a shortcode for embedding Gist code in WordPress.
 
-The shortcode has two attributes, the Gist source URL and, optionally, the height of the embedded code window.`[gist src="" height=""]`
+The shortcode has two attributes, the Gist source URL and, optionally, the height of the embedded code window.
+`[gist src="" height=""]`
+
+The Gist `src` attribute must be the embed URL, for example: https://gist.github.com/imaginarymedia/316a29936e5e7d709665.js
+
+The Gist `height` attribute is optional and can be any value with a valid CSS unit measure: em, %, px, vh, etc.
 
 The plugin also creates UI buttons for both the visual and text editors.
 
-If you have suggestions for improvements, please contact us. via the [plugin support page](https://wordpress.org/support/plugin/wp-gist-embed).
-
-If you find this useful, please [review the plugin](https://wordpress.org/support/view/plugin-reviews/wp-gist-embed).
+If you have suggestions for improvements, please contact us. via the [plugin support page](https://wordpress.org/support/plugin/wp-gist-embed) and if you find this useful, please [review the plugin](https://wordpress.org/support/view/plugin-reviews/wp-gist-embed).
 
 == Installation ==
 
