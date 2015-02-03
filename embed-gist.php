@@ -9,7 +9,7 @@
  * License: GPL2
  */
 
-/*  Copyright 2014 Imaginary Media (email : support@imaginarymedia.com.au)
+/*  Copyright 2015 Imaginary Media (email : support@imaginarymedia.com.au)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as 
