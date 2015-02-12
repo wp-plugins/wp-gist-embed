@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Gist Embed
  * Plugin URI: https://imaginarymedia.com.au/projects/wp-gist-embed/
- * Description: A plugin to add Gist embedding support via shortcode and the Tiny MCE editor
+ * Description: A plugin to add Gist embedding support via shortcode and the Tiny MCE editor.
  * Version: 0.1
  * Author: Imaginary Media
  * Author URI: https://imaginarymedia.com.au/
@@ -67,5 +67,19 @@ function imeg_embed_gist($atts, $content = null) {
   return $html;
 }
 add_shortcode('gist', 'imeg_embed_gist');
+
+// Add donate link on plugin page
+function imeg_plugin_meta_link( $links, $file ) {
+  if ( strpos( $file, 'embed-gist.php' ) !== false ) {
+    $meta_link = array(
+      '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BNWNBPEK33UBA" target="_blank">Donate via PayPal</a>',
+      '<a href="https://www.coinbase.com/imaginarymedia" target="_blank">Donate Bitcoin</a>',
+      '<a href="https://wordpress.org/support/view/plugin-reviews/wp-gist-embed" target="_blank">Rate This Plugin</a>'
+    );
+    $links = array_merge( $links, $meta_link );
+  }
+  return $links;
+}
+add_filter("plugin_row_meta", "imeg_plugin_meta_link", 10, 2 );
 
 ?>
