@@ -72,8 +72,7 @@ add_shortcode('gist', 'imeg_embed_gist');
 function imeg_plugin_meta_link( $links, $file ) {
   if ( strpos( $file, 'embed-gist.php' ) !== false ) {
     $meta_link = array(
-      '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BNWNBPEK33UBA" target="_blank">Donate via PayPal</a>',
-      '<a href="https://www.coinbase.com/imaginarymedia" target="_blank">Donate Bitcoin</a>',
+      'Donate via <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BNWNBPEK33UBA" target="_blank">PayPal</a> or <a href="https://www.coinbase.com/imaginarymedia" target="_blank">Bitcoin</a>',
       '<a href="https://wordpress.org/support/view/plugin-reviews/wp-gist-embed" target="_blank">Rate This Plugin</a>'
     );
     $links = array_merge( $links, $meta_link );
